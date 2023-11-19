@@ -98,7 +98,7 @@ dataLayer.push({
         'item_category': 'PORTSKÉ VÍNO',
         'item_category2': 'Portské víno reservy',
         'price': 580,
-        'quantity': 1
+        'quantity': 2
       },
       {
         ....
@@ -120,8 +120,8 @@ dataLayer.push({
   'event': 'purchase',
   'ecommerce': {
     'transaction_id': 'T12345',
-    'value': 580,
-    'tax': 100.66,
+    'value': 1160,
+    'tax': 201.32,
     'shipping': 0,
     'currency': 'CZK',
     'coupon': 'SLEVA20',
@@ -134,7 +134,7 @@ dataLayer.push({
         'item_category': 'PORTSKÉ VÍNO',
         'item_category2': 'Portské víno reservy',
         'price': 580,
-        'quantity': 1
+        'quantity': 2
       },
       {
         ....
@@ -144,7 +144,9 @@ dataLayer.push({
 });
 </script>
 ```
-Pro každý produkt v objednávce bude jeden objekt v poli `items`. 
+Pro každý produkt v objednávce bude jeden objekt v poli `items`.
+
+Proměnná `value` obsahuje konečnou cenu objednávky včetně dopravy a daně, ty jsou samostatně vyčíslené v proměnných `tax` a `shipping`.
 
 ### Další zdroje
 
