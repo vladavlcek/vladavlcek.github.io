@@ -1,9 +1,11 @@
 # Technický popis pro nasazení měření na weby mimulo.(cz,sk,pl,hu,ro) a kojeneckekojenecke-obleceni.eu
 
 
-Na webech už je nasazeno měření Zobrazení detailu produktu (*view_item*), Přidání do košíku (*add_to_cart*) a Dokončení objednávky (*purchase*), proto nejsou obsaženy v tomto přehledu, jdou zde jen kódy, které je potřeba přidat.
-
 ## Nasazení měření elektronického obchodu
+
+**Je důležité, aby hodnoty `item_id` a `item_name` byly pro stejný produkt stejné napříč všemi událostmi.**
+
+Na webech už je nasazeno měření Zobrazení detailu produktu (*view_item*), Přidání do košíku (*add_to_cart*) a Dokončení objednávky (*purchase*), proto nejsou obsaženy v tomto přehledu, jdou zde jen kódy, které je potřeba přidat.
 
 ### Zobrazení výpisu produktů ([dokumentace](https://developers.google.com/analytics/devguides/collection/ga4/ecommerce?client_type=gtm#view_item_list-gtm))
 Na stránkách s výpisem produktů, přidat kód
